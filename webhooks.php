@@ -3,7 +3,7 @@
 //require "vendor/autoload.php";
 //require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
 
-$access_token = '3yXfghiJuYpgoGP7DNSjMYkYqMdfP6n6/75/DTmX1+31aduUGjei32X5X081hBOa2YhYpMWgpltIh847HaIwgOFceqKuZ0Q6lv0R5l9+WvDo8VHT8T5HrfDhDU1Hi5tXk42D4j/MpKGXhzNrKDUNlAdB04t89/1O/w1cDnyilFU=';
+$accessToken  = '3yXfghiJuYpgoGP7DNSjMYkYqMdfP6n6/75/DTmX1+31aduUGjei32X5X081hBOa2YhYpMWgpltIh847HaIwgOFceqKuZ0Q6lv0R5l9+WvDo8VHT8T5HrfDhDU1Hi5tXk42D4j/MpKGXhzNrKDUNlAdB04t89/1O/w1cDnyilFU=';
 
 $content = file_get_contents('php://input');
     $arrayJson = json_decode($content, true);
@@ -72,4 +72,5 @@ function replyMsg($arrayHeader,$arrayPostData){
         curl_close ($ch);
     }
 
-	echo 'OK';
+	exit;
+?>
