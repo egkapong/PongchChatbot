@@ -73,4 +73,3 @@ function replyMsg($arrayHeader,$arrayPostData){
     }
 
 	echo 'OK';
-?>
