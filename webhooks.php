@@ -64,14 +64,14 @@ $content = file_get_contents('php://input');
         $arrayPostData['messages'][0]['text'] = $message;
         $arrayPostData['messages'][1]['type'] = "text";
         $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
-        $arrayPostData['messages'][1]['type'] = "text";
-        $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
-        $arrayPostData['messages'][1]['type'] = "text";
-        $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
-        $arrayPostData['messages'][1]['type'] = "text";
-        $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
-        $arrayPostData['messages'][1]['type'] = "text";
-        $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
+        $arrayPostData['messages'][2]['type'] = "text";
+        $arrayPostData['messages'][2]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
+        $arrayPostData['messages'][3]['type'] = "text";
+        $arrayPostData['messages'][3]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
+        $arrayPostData['messages'][4]['type'] = "text";
+        $arrayPostData['messages'][4]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
+        $arrayPostData['messages'][5]['type'] = "text";
+        $arrayPostData['messages'][5]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
         replyMsg($arrayHeader,$arrayPostData);
     }
 
