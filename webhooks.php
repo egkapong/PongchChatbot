@@ -61,15 +61,7 @@ $content = file_get_contents('php://input');
     else{
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = $message;
-        $arrayPostData['messages'][1]['type'] = "text";
-        $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
-        $arrayPostData['messages'][2]['type'] = "text";
-        $arrayPostData['messages'][2]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
-        $arrayPostData['messages'][3]['type'] = "text";
-        $arrayPostData['messages'][3]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
-        $arrayPostData['messages'][4]['type'] = "text";
-        $arrayPostData['messages'][4]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
+        $arrayPostData['messages'][0]['text'] = "ข้อความนี้ '" + $message + "' ไม่ตรงกับการค้นหา";
         replyMsg($arrayHeader,$arrayPostData);
     }
 
