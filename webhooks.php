@@ -63,7 +63,15 @@ $content = file_get_contents('php://input');
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = $message;
         $arrayPostData['messages'][1]['type'] = "text";
-        $arrayPostData['messages'][1]['text'] = "ไม่มีการตอบกลับข้อความดังกล่าว";
+        $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
+        $arrayPostData['messages'][1]['type'] = "text";
+        $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
+        $arrayPostData['messages'][1]['type'] = "text";
+        $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
+        $arrayPostData['messages'][1]['type'] = "text";
+        $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
+        $arrayPostData['messages'][1]['type'] = "text";
+        $arrayPostData['messages'][1]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
         replyMsg($arrayHeader,$arrayPostData);
     }
 
