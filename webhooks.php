@@ -70,8 +70,6 @@ $content = file_get_contents('php://input');
         $arrayPostData['messages'][3]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
         $arrayPostData['messages'][4]['type'] = "text";
         $arrayPostData['messages'][4]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
-        $arrayPostData['messages'][5]['type'] = "text";
-        $arrayPostData['messages'][5]['text'] = "ไม่สามารถตอบข้อความนี้ได้";
         replyMsg($arrayHeader,$arrayPostData);
     }
 
