@@ -61,7 +61,7 @@ $content = file_get_contents('php://input');
     else{
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
-        $arrayPostData['messages'][0]['text'] = "ข้อความนี้ '" + $message + "' ไม่ตรงกับการค้นหา";
+        $arrayPostData['messages'][0]['text'] = "ข้อความนี้ไม่ตรงกับการค้นหา";
         replyMsg($arrayHeader,$arrayPostData);
     }
 
