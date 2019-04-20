@@ -62,6 +62,8 @@ $content = file_get_contents('php://input');
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = $message;
+        $arrayPostData['messages'][1]['type'] = "text";
+        $arrayPostData['messages'][1]['text'] = "ไม่มีการตอบกลับข้อความดังกล่าว";
         replyMsg($arrayHeader,$arrayPostData);
     }
 
